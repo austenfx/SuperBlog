@@ -1,0 +1,114 @@
+html{
+    margin: 0px;
+}
+
+body{
+    background-color: #cabebe;
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.navbar h1{
+    margin: 0px;
+    font-size: 45px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #cabebe;
+}
+
+.createBtn{
+    background-color: green;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    
+}
+
+.postPreview{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: lightgrey;
+    margin: 20px;
+    padding: 20px 50px;
+    border: gray 5px solid;
+    border-radius: 10px;
+}
+
+.postForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.postForm *{
+    margin: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.postForm .description{
+    min-height: 50px;
+}
+
+.postForm .content {
+    min-height: 400px;
+}
+
+.postView{
+    text-align: center;
+    margin: 0px 25%;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) and (min-width: 501px) {
+    .postView{
+        margin: 0px 15%;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .postView{
+        margin: 0px 5%;
+        margin-bottom: 100px;
+    }
+}
+
+.postView .title{
+    font-size: 40px;
+}
+
+.postView .content{
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+.button{
+    background-color: rgba(151, 148, 148, 0.788);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.button.delete{
+    background-color: red;
+}

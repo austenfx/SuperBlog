@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="icon" href="images/SB-logo.ico">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+
+    <form class="postForm" action="/submitchanges<%= id %>" method="POST">
+        <input type="text" required name="title" maxlength="30" placeholder="Title" value="<%= posts.title %>">
+        <textarea type="text" required name="description" placeholder="Description" class="description"><%= posts.description %></textarea>
+        <textarea name="content" required cols="30" rows="10" class="content" placeholder="Enter post content"><%= posts.content %></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    <a class="button delete" href="/delete<%= id %>">Delete</a>
+</body>

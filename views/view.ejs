@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= posts.title %></title>
+    <link rel="icon" href="images/SB-logo.ico">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="postView">
+        <h1 class="title"><%= posts.title %></h1>
+        <h2 class="description"><%= posts.description %></h2>
+        <p class="content"><%= posts.content %></p>
+        <hr>
+        <p>Last edited: <%= posts.timeEdited %></p>
+        <a class="button" href="/edit<%= id %>">Edit</a>
+    </div>
+</body>
+</html>
